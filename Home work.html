@@ -1,0 +1,67 @@
+<html>
+<head>
+<title> Vanessa Munyana</title>
+	<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="11.JPG" style="width:60%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="22.jpg" style="width:60%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="33.jpg" style="width:60%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+	<p>
+<h1 style="color:white;font-size:40px;text-align:center;background-color:black; border-radius:10%"><b>Hello class, this is my Autobiography</b></h1>
+</p>
+<img src="vava1.JPG" alt="VANESSA" width="300" height="220">
+<h1>Hello, my name is Vanessa Munyana and I'm a student in Davis college</h1>
+<h2>When I was you I loved palying video games, cerating something new and palying with computers</h2>
+<h3>And that is why now I chose to ctudy Innformation System in my University</h3>
+<h4>Now, I'mlooking forward to learn about computer scince and I amglag to interact with my colleagues.</h4>
+<a href="https://akilah.instructure.com/profile";font-size:50px; target="_blank">Contact us</a>
+</head>
+</html>
